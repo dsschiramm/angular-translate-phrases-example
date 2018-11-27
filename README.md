@@ -1,0 +1,1 @@
+# angular-translate-phrases-example
