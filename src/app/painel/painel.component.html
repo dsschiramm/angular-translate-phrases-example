@@ -1,6 +1,6 @@
 <div class="container ml-5 mr-0">
-    <div class="jumbotron py-5 px-0">
-        <div class="row mb-3">
+    <div class="jumbotron jumbotron-fluid py-5 px-0 mt-5">
+        <div class="row mb-3 pl-5 pr-5">
             <div class="col-sm-6">
                 <app-progresso [progresso]="progresso"></app-progresso>
             </div>
@@ -12,18 +12,18 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row pl-5">
             <div class="col">
                 <h6>{{ instrucao }}</h6>
                 <p>{{ rodadaFrase.fraseEng }}</p>
 
-                <div class="form-group">
+                <div class="form-group pr-5">
                     <textarea (input)="obterResposta($event)" [value]="resposta" class="form-control" rows="3"></textarea>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row pr-5">
             <div class="col">
                 <div class="d-flex justify-content-end">
                     <button (click)="verificarResposta()" type="button" class="btn btn-outline-primary">Verificar</button>
